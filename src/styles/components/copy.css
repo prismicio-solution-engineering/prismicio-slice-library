@@ -1,0 +1,40 @@
+.light-copy {
+  @apply text-white;
+}
+
+.light-copy .copy-muted p,
+.light-copy .copy-muted ul,
+.light-copy .copy-muted ol {
+  @apply text-white text-opacity-60;
+}
+
+.light-copy .copy-muted .highlight {
+  @apply text-white text-opacity-100;
+}
+
+.dark-copy {
+  @apply text-gray-15;
+}
+
+.dark-copy .copy-muted p,
+.dark-copy .copy-muted ul,
+.dark-copy .copy-muted ol {
+  @apply text-gray-50;
+}
+
+.dark-copy .copy-muted .highlight {
+  @apply text-gray-15;
+}
+
+.inline-code {
+  @apply text-[14px];
+}
+
+h1 .inline-code,
+h2 .inline-code,
+h3 .inline-code,
+h4 .inline-code,
+h5 .inline-code,
+h6 .inline-code {
+  font-size: 1em;
+}

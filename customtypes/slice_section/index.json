@@ -1,0 +1,101 @@
+{
+  "format": "custom",
+  "id": "slice_section",
+  "label": "Slice Section",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "slice_name": {
+        "type": "Text",
+        "config": {
+          "label": "Slice Name",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "main_text_media": {
+              "type": "SharedSlice"
+            },
+            "main_testimonials": {
+              "type": "SharedSlice"
+            },
+            "main_logotypes": {
+              "type": "SharedSlice"
+            },
+            "main_pricing": {
+              "type": "SharedSlice"
+            },
+            "main_spacer": {
+              "type": "SharedSlice"
+            },
+            "main_jobs": {
+              "type": "SharedSlice"
+            },
+            "main_how_it_works": {
+              "type": "SharedSlice"
+            },
+            "main_hero": {
+              "type": "SharedSlice"
+            },
+            "main_featured": {
+              "type": "SharedSlice"
+            },
+            "main_features": {
+              "type": "SharedSlice"
+            },
+            "main_form": {
+              "type": "SharedSlice"
+            },
+            "main_faq": {
+              "type": "SharedSlice"
+            },
+            "main_call_to_action": {
+              "type": "SharedSlice"
+            },
+            "main_benefits": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

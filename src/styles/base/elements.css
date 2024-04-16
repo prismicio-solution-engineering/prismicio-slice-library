@@ -1,0 +1,39 @@
+progress[value]::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.light-progress progress[value]::-webkit-progress-value {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.windows *,
+.windows {
+  scrollbar-width: thin;
+  scrollbar-color: #a4a4a4 #fff;
+}
+
+.windows *::-webkit-scrollbar,
+.windows::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.windows *::-webkit-scrollbar-track,
+.windows::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.windows *::-webkit-scrollbar-thumb,
+.windows::-webkit-scrollbar-thumb {
+  background-color: #a4a4a4;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}

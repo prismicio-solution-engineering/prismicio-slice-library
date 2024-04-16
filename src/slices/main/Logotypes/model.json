@@ -1,0 +1,55 @@
+{
+  "id": "main_logotypes",
+  "type": "SharedSlice",
+  "name": "Logotypes",
+  "description": "MainLogotypes",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": ["Inherit from page", "light", "dark"],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "remove_background": {
+          "type": "Boolean",
+          "config": {
+            "label": "Remove background",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {
+        "logotype": {
+          "type": "Image",
+          "config": {
+            "label": "Logotype",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

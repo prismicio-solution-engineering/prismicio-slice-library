@@ -1,0 +1,70 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"theme": {
+				"__TYPE__": "FieldContent",
+				"value": "Inherit from page",
+				"type": "Select"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Range"
+						}
+					}
+				]
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Duis laboris aute est proident ipsum ullamco ullamco ipsum incididunt nostrud officia elit. In labore voluptate voluptate qui id officia nisi. Pariatur culpa pariatur sit Lorem deserunt ad id commodo ea mollit."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Slight"
+									}
+								}
+							]
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Nulla minim irure cupidatat qui ut. Commodo ut culpa pariatur eu do voluptate enim adipisicing Lorem consectetur. Ullamco duis id ad tempor ullamco velit ex consectetur ex fugiat eu."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

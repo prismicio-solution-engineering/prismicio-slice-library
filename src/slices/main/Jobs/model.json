@@ -1,0 +1,61 @@
+{
+  "id": "main_jobs",
+  "type": "SharedSlice",
+  "name": "Jobs",
+  "description": "MainJobs",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": ["Inherit from page", "light", "dark"],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": ["primary", "secondary", "tertiary"]
+          }
+        }
+      }
+    }
+  ]
+}

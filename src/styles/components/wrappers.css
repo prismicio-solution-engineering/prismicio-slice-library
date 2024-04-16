@@ -1,0 +1,3 @@
+.grid-wrapper {
+  @apply grid grid-cols-6 sm:grid-cols-12 sm:gap-4 2xl:gap-6;
+}

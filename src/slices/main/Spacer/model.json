@@ -1,0 +1,18 @@
+{
+  "id": "main_spacer",
+  "type": "SharedSlice",
+  "name": "Spacer",
+  "description": "MainSpacer",
+  "variations": [
+    {
+      "id": "remove_space",
+      "name": "RemoveSpace",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Removes the default spacing between two slices",
+      "imageUrl": "",
+      "primary": {},
+      "items": {}
+    }
+  ]
+}

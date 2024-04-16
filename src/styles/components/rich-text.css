@@ -1,0 +1,15 @@
+.richtext-embed {
+  @apply relative pb-[56.25%] rounded-xl overflow-hidden border-2 border-gray-15;
+}
+
+.richtext-embed[data-oembed-type="photo"] {
+  @apply pb-0;
+}
+
+.richtext-embed[data-oembed-type="photo"] img {
+  @apply w-full;
+}
+
+.richtext-embed iframe {
+  @apply absolute inset-0 w-full h-full;
+}

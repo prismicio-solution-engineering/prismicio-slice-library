@@ -1,0 +1,89 @@
+/* Remove space between same theme slices */
+[data-theme="dark"]:not([data-theme-variation="muted"])
+  + [data-theme="dark"]:not([data-theme-variation="muted"]),
+[data-theme="light"]:not([data-theme-variation="muted"])
+  + [data-theme="light"]:not([data-theme-variation="muted"]) {
+  @apply -mt-12 md:-mt-20 2xl:-mt-24;
+}
+
+/* Remove space between same theme slices with main_text_media */
+[data-slice-type="main_text_media"][data-theme="light"]
+  + [data-slice-type="main_text_media"][data-theme="light"],
+[data-slice-type="main_text_media"][data-theme="dark"]
+  + [data-slice-type="main_text_media"][data-theme="dark"] {
+  @apply -mt-12 md:-mt-12 2xl:-mt-12 !important;
+}
+
+/* Adjust spacing on slice-layouts for callout variations of main_text_media when they are preceded by a main_text_media slice */
+[data-theme="light"][data-slice-type="main_text_media"]
+  + [data-theme="light"][data-slice-type="main_text_media"][data-slice-variation="callout"]
+  .slice-layout,
+[data-theme="dark"][data-slice-type="main_text_media"]
+  + [data-theme="dark"][data-slice-type="main_text_media"][data-slice-variation="callout"]
+  .slice-layout {
+  @apply py-0 md:py-12 2xl:py-12 !important;
+}
+
+/* Adjust spacing on slice-layouts when a non-main_text_media slice is followed by a main_text_media slice */
+[data-theme="light"]:not([data-slice-type="main_text_media"])
+  + [data-theme="light"][data-slice-type="main_text_media"]
+  .slice-layout,
+[data-theme="dark"]:not([data-slice-type="main_text_media"])
+  + [data-theme="dark"][data-slice-type="main_text_media"]
+  .slice-layout {
+  @apply pt-12 md:pt-20 2xl:pt-24 !important;
+}
+
+/* Remove spacing when a main_text_media slice is followed by a non-main_text_media slice */
+[data-theme="light"][data-slice-type="main_text_media"]
+  + [data-theme="light"]:not([data-slice-type="main_text_media"]),
+[data-theme="dark"][data-slice-type="main_text_media"]
+  + [data-theme="dark"]:not([data-slice-type="main_text_media"]) {
+  @apply -mt-12 md:-mt-12 2xl:-mt-12 !important;
+}
+
+/* Fix spacing for legal slices */
+[data-slice-library="legal"] + [data-slice-library="legal"] {
+  @apply pt-12;
+}
+
+[data-slice-library="legal"]:first-of-type {
+  @apply pt-20;
+}
+
+[data-slice-library="legal"]:last-of-type {
+  @apply pb-20;
+}
+
+[data-slice-type="legal_document_history"] + [data-slice-type="legal_toc"],
+[data-slice-type="legal_toc"] + [data-slice-type="legal_document_history"] {
+  @apply pt-4;
+}
+
+/* If theme has no background, remove space to slice above */
+section:not([data-theme-variation="muted"]):not(
+    [data-slice-type="main_text_media"]
+  )
+  + .spacer-remove {
+  @apply -mt-12 md:-mt-20 2xl:-mt-24;
+}
+
+/* same as above but for main_text_media */
+section[data-slice-type="main_text_media"] + .spacer-remove {
+  @apply -mt-12;
+}
+
+/* If dark slice before spacer, make spacer dark */
+section[data-theme="dark"] + .spacer-remove {
+  @apply bg-gray-15;
+}
+
+/* When space is removed, also add a regular small gap */
+.spacer-remove {
+  @apply h-4 2xl:h-6;
+}
+
+/* Remove space to slice below */
+.spacer-remove + section .slice-layout {
+  @apply pt-0;
+}

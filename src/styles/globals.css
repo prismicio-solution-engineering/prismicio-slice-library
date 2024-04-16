@@ -1,0 +1,69 @@
+/* BASE */
+@import "tailwindcss/base";
+@import "./base/elements.css";
+
+/* COMPONENTS */
+@import "tailwindcss/components";
+@import "./components/swiper-overwrites.css";
+@import "./components/wrappers.css";
+@import "./components/copy.css";
+/* @import "./components/blog.css"; to prevent tailwind error */ 
+@import "./components/rich-text.css";
+@import "./components/slice-spacing.css";
+
+/* UTILITIES */
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  .wrap-balance {
+    text-wrap: balance;
+  }
+}
+
+.title-limiter {
+  @apply max-w-[14em];
+}
+
+.container {
+  @apply 2xl:max-w-[83.5rem] 3xl:max-w-[90rem];
+  /* @apply lg:max-w-[72rem] 2xl:max-w-[90rem] 3xl:max-w-[96rem]; */
+}
+
+.toc-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+mark {
+  @apply bg-primary-purple text-white rounded-sm px-px;
+}
+
+.uc-embedding-container {
+  @apply text-gray-15;
+}
+
+.uc-embedding-container .uc-embedding-buttons .uc-embedding-accept {
+  @apply bg-primary-purple transition-colors duration-200 ease-in-out hover:bg-[#7217e6];
+}
+
+.uc-embedding-container .uc-embedding-buttons .uc-embedding-more-info {
+  @apply bg-gray-EE transition-colors duration-200 ease-in-out hover:bg-[#d5d5d5];
+}
+
+.connect-next-slice {
+  @apply -mb-20;
+}
+
+.connect-next-slice + * {
+  @apply relative z-10;
+}
+
+.meetings-iframe-container iframe {
+  @apply max-h-0 min-h-[620px] w-full !important;
+}
+
+.anti-flicker,
+.anti-flicker * {
+  visibility: hidden !important;
+  display: none !important;
+  opacity: 0 !important;
+}

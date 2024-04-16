@@ -1,0 +1,734 @@
+{
+  "id": "main_hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "MainHero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "centered",
+      "name": "Centered",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "centeredBackground",
+      "name": "Centered Background",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "centeredImage",
+      "name": "Centered Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "caption": {
+          "type": "Text",
+          "config": {
+            "label": "Caption",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "centeredVideo",
+      "name": "Centered Video",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink,list-item"
+          }
+        },
+        "youtube_link": {
+          "type": "Embed",
+          "config": {
+            "label": "Youtube link",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Video poster",
+            "constraint": {
+              "width": 1920,
+              "height": 1080
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "homepage",
+      "name": "Homepage",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,strong,em,list-item"
+          }
+        },
+        "video_mp4": {
+          "type": "Link",
+          "config": {
+            "label": "Video MP4",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "video_webm": {
+          "type": "Link",
+          "config": {
+            "label": "Video WEBM",
+            "placeholder": "",
+            "select": "media"
+          }
+        },
+        "video_poster": {
+          "type": "Image",
+          "config": {
+            "label": "Video poster",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "cards",
+      "name": "Cards",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "allow_personalization": {
+          "type": "Boolean",
+          "config": {
+            "label": "Allow personalization",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "green",
+              "blue",
+              "pink"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        }
+      },
+      "items": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "orange",
+              "pink",
+              "green",
+              "blue"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,hyperlink,strong,em"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 1638,
+              "height": 760
+            },
+            "thumbnails": [
+              {
+                "name": "small",
+                "width": 800,
+                "height": 448
+              }
+            ]
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "highlight": {
+          "type": "Select",
+          "config": {
+            "label": "Highlight",
+            "placeholder": "",
+            "options": [
+              "none",
+              "purple",
+              "green",
+              "blue",
+              "pink",
+              "orange"
+            ],
+            "default_value": "none"
+          }
+        }
+      }
+    }
+  ]
+}

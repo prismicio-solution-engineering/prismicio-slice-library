@@ -1,0 +1,155 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"plan",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "DocumentLink",
+								"id": "mock_document_id"
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "table",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Final"
+						}
+					}
+				]
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Nisi ea do officia officia elit occaecat eu."
+						}
+					}
+				]
+			},
+			"unlimited_essentials_title": {
+				"__TYPE__": "FieldContent",
+				"value": "appearance",
+				"type": "Text"
+			},
+			"content_delivery_title": {
+				"__TYPE__": "FieldContent",
+				"value": "pot",
+				"type": "Text"
+			},
+			"users_and_user_roles_title": {
+				"__TYPE__": "FieldContent",
+				"value": "cloud",
+				"type": "Text"
+			},
+			"localization_title": {
+				"__TYPE__": "FieldContent",
+				"value": "willing",
+				"type": "Text"
+			},
+			"publishing_experience_title": {
+				"__TYPE__": "FieldContent",
+				"value": "cat",
+				"type": "Text"
+			},
+			"developer_experience_title": {
+				"__TYPE__": "FieldContent",
+				"value": "seems",
+				"type": "Text"
+			},
+			"apis_and_integrations_title": {
+				"__TYPE__": "FieldContent",
+				"value": "changing",
+				"type": "Text"
+			},
+			"security_and_compliance_title": {
+				"__TYPE__": "FieldContent",
+				"value": "bread",
+				"type": "Text"
+			},
+			"support_and_services_title": {
+				"__TYPE__": "FieldContent",
+				"value": "salt",
+				"type": "Text"
+			},
+			"billing_title": {
+				"__TYPE__": "FieldContent",
+				"value": "trunk",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"key",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "1",
+							"type": "Select"
+						}
+					],
+					[
+						"feature",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "dull",
+							"type": "Text"
+						}
+					],
+					[
+						"tooltip",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "broken",
+							"type": "Text"
+						}
+					],
+					[
+						"small_text",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					],
+					[
+						"indent",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					],
+					[
+						"tag",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "none",
+							"type": "Select"
+						}
+					]
+				]
+			}
+		]
+	}
+]

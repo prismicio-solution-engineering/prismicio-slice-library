@@ -1,0 +1,592 @@
+{
+  "id": "main_featured",
+  "type": "SharedSlice",
+  "name": "FeaturedContent",
+  "description": "MainFeatured",
+  "variations": [
+    {
+      "id": "showcaseSlider",
+      "name": "ShowcaseSlider",
+      "docURL": "...",
+      "version": "initial",
+      "description": "ShowcaseSlider",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "website": {
+          "type": "Link",
+          "config": {
+            "label": "Website",
+            "select": "document",
+            "customtypes": [
+              "website"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "partner",
+      "name": "Partner",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Partner",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,em,strong"
+          }
+        },
+        "partner": {
+          "type": "Link",
+          "config": {
+            "label": "Partner",
+            "select": "document",
+            "customtypes": [
+              "developer"
+            ]
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "changelog",
+      "name": "Changelog",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Partner",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,em,strong"
+          }
+        },
+        "github_repository": {
+          "type": "Text",
+          "config": {
+            "label": "Github repository",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "videoSummary",
+      "name": "VideoSummary",
+      "docURL": "...",
+      "version": "initial",
+      "description": "ShowcaseSlider",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,em,strong"
+          }
+        }
+      },
+      "items": {
+        "youtube_link": {
+          "type": "Embed",
+          "config": {
+            "label": "Youtube link",
+            "placeholder": ""
+          }
+        },
+        "video_summary": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Video summary",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "list-item"
+          }
+        }
+      }
+    },
+    {
+      "id": "timelineCards",
+      "name": "TimelineCards",
+      "docURL": "...",
+      "version": "initial",
+      "description": "ShowcaseSlider",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,em,strong"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        }
+      },
+      "items": {
+        "date": {
+          "type": "Date",
+          "config": {
+            "label": "Date",
+            "placeholder": ""
+          }
+        },
+        "tag": {
+          "type": "Select",
+          "config": {
+            "label": "Tag",
+            "placeholder": "",
+            "options": [
+              "new",
+              "update"
+            ]
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "blue",
+              "orange",
+              "pink",
+              "green"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,strong,em"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "kanbanCards",
+      "name": "KanbanCards",
+      "docURL": "...",
+      "version": "initial",
+      "description": "ShowcaseSlider",
+      "imageUrl": "",
+      "primary": {
+        "theme": {
+          "type": "Select",
+          "config": {
+            "label": "Theme",
+            "placeholder": "",
+            "options": [
+              "Inherit from page",
+              "light",
+              "dark"
+            ],
+            "default_value": "Inherit from page"
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,em,strong"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "link_label": {
+          "type": "Text",
+          "config": {
+            "label": "Link label",
+            "placeholder": ""
+          }
+        },
+        "link_style": {
+          "type": "Select",
+          "config": {
+            "label": "Link style",
+            "placeholder": "Pick a style",
+            "options": [
+              "primary",
+              "secondary",
+              "tertiary"
+            ]
+          }
+        },
+        "column_1_heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Column 1 heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "column_2_heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Column 2 heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "column_3_heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Column 3 heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        }
+      },
+      "items": {
+        "tag": {
+          "type": "Select",
+          "config": {
+            "label": "Tag",
+            "placeholder": "",
+            "options": [
+              "new",
+              "update"
+            ]
+          }
+        },
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "eyebrow_color": {
+          "type": "Select",
+          "config": {
+            "label": "Eyebrow color",
+            "placeholder": "Pick a color",
+            "options": [
+              "purple",
+              "blue",
+              "orange",
+              "pink",
+              "green"
+            ]
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          }
+        },
+        "subheading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Subheading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,hyperlink,strong,em"
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "column": {
+          "type": "Select",
+          "config": {
+            "label": "Column",
+            "placeholder": "Pick a column",
+            "options": [
+              "1",
+              "2",
+              "3"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

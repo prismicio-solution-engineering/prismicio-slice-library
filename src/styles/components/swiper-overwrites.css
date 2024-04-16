@@ -1,0 +1,30 @@
+.testimonial-swiper,
+.step-swiper,
+.video-swiper,
+.pricing-swiper,
+.blog-post-swiper,
+.blog-category-post-swiper,
+.blog-timeline-swiper,
+.sm-changelog-swiper,
+.blog-post-picks-swiper,
+.testimonail-portraits-swiper,
+.guides-swiper,
+.video-summary-swiper {
+  @apply overflow-visible !important;
+}
+
+.testimonial-swiper {
+  @apply ml-0 !important;
+}
+
+.testimonial-swiper .swiper-slide-active {
+  @apply opacity-100;
+}
+
+.tab-thumb-swiper .swiper-slide {
+  @apply w-auto !important;
+}
+
+.tab-thumb-swiper {
+  @apply ml-0 mr-0 !important;
+}
