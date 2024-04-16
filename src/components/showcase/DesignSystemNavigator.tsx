@@ -15,15 +15,15 @@ type Category = {
   id: string;
   name: string;
   websiteSections: SharedSlice[];
-  files: {
-    id: string;
-    model: string;
-    component: string;
-    images: {
-      name: string;
-      base64: string;
-    }[];
-  }
+  // files: {
+  //   id: string;
+  //   model: string;
+  //   component: string;
+  //   images: {
+  //     name: string;
+  //     base64: string;
+  //   }[];
+  // }
 };
 
 type Brand = {
@@ -52,115 +52,115 @@ function snakeToPascal(str: string) {
 }
 
 // Button component for slice add to project
-const AddToProjectButton = (slice: {
-  id: string;
-  model: string;
-  component: string;
-  images: {
-    name: string;
-    base64: string;
-  }[];
-}) => {
+// const AddToProjectButton = (slice: {
+//   id: string;
+//   model: string;
+//   component: string;
+//   images: {
+//     name: string;
+//     base64: string;
+//   }[];
+// }) => {
 
-  const handleButtonClick = async () => {
-    if (!window.showDirectoryPicker) {
-      alert("Your browser does not support directory selection.");
-      return;
-    }
+//   const handleButtonClick = async () => {
+//     if (!window.showDirectoryPicker) {
+//       alert("Your browser does not support directory selection.");
+//       return;
+//     }
 
-    try {
-      const directoryHandle = await window.showDirectoryPicker();
-      // Add your logic to handle file download and saving to the selected directory
-      console.log("Directory selected:", directoryHandle);
+//     try {
+//       const directoryHandle = await window.showDirectoryPicker();
+//       // Add your logic to handle file download and saving to the selected directory
+//       console.log("Directory selected:", directoryHandle);
 
 
-      const indexFileHandle = await directoryHandle.getFileHandle('index.ts', { create: true });
-      // Read the contents of the file
-      const file = await indexFileHandle.getFile();
-      let contents = await file.text();
+//       const indexFileHandle = await directoryHandle.getFileHandle('index.ts', { create: true });
+//       // Read the contents of the file
+//       const file = await indexFileHandle.getFile();
+//       let contents = await file.text();
 
-      // Add the new line
-      if (!contents.includes(slice.id)) {
+//       // Add the new line
+//       if (!contents.includes(slice.id)) {
 
-        // Find the position of the last closing brace and insert the new line before it
-        const insertionPoint = contents.lastIndexOf('};');
-        if (insertionPoint !== -1) {
-          const newComponent = '  ' + slice.id + ': dynamic(() => import("./' + snakeToPascal(slice.id) + '")),\n';
-          contents = contents.substring(0, insertionPoint) + newComponent + contents.substring(insertionPoint);
-        }
-        // Write the changes back to the file
-        const indexFilewritable = await indexFileHandle.createWritable();
-        await indexFilewritable.write(contents);
-        await indexFilewritable.close();
+//         // Find the position of the last closing brace and insert the new line before it
+//         const insertionPoint = contents.lastIndexOf('};');
+//         if (insertionPoint !== -1) {
+//           const newComponent = '  ' + slice.id + ': dynamic(() => import("./' + snakeToPascal(slice.id) + '")),\n';
+//           contents = contents.substring(0, insertionPoint) + newComponent + contents.substring(insertionPoint);
+//         }
+//         // Write the changes back to the file
+//         const indexFilewritable = await indexFileHandle.createWritable();
+//         await indexFilewritable.write(contents);
+//         await indexFilewritable.close();
 
-        // Create a new folder in the selected directory
-        const newFolderHandle = await directoryHandle.getDirectoryHandle(snakeToPascal(slice.id), { create: true });
+//         // Create a new folder in the selected directory
+//         const newFolderHandle = await directoryHandle.getDirectoryHandle(snakeToPascal(slice.id), { create: true });
 
-        const fileHandle = await newFolderHandle.getFileHandle('model.json', { create: true });
-        const writable = await fileHandle.createWritable();
-        await writable.write(JSON.stringify(slice.model));
-        await writable.close();
+//         const fileHandle = await newFolderHandle.getFileHandle('model.json', { create: true });
+//         const writable = await fileHandle.createWritable();
+//         await writable.write(JSON.stringify(slice.model));
+//         await writable.close();
 
-        const componentFileHandle = await newFolderHandle.getFileHandle('index.tsx', { create: true });
-        const componentWritable = await componentFileHandle.createWritable();
-        await componentWritable.write(slice.component);
-        await componentWritable.close();
+//         const componentFileHandle = await newFolderHandle.getFileHandle('index.tsx', { create: true });
+//         const componentWritable = await componentFileHandle.createWritable();
+//         await componentWritable.write(slice.component);
+//         await componentWritable.close();
 
-        // Convert base64 string to a Blob
-        for (let i = 0; i < slice.images.length; i++) {
-          const imageBlob = base64ToBlob(slice.images[i].base64);
+//         // Convert base64 string to a Blob
+//         for (let i = 0; i < slice.images.length; i++) {
+//           const imageBlob = base64ToBlob(slice.images[i].base64);
 
-          // Create a new file and write the Blob to it
-          const imageFileHandle = await newFolderHandle.getFileHandle(slice.images[i].name, { create: true });
-          const imageWritable = await imageFileHandle.createWritable();
-          await imageWritable.write(imageBlob);
-          await imageWritable.close();
-        }
+//           // Create a new file and write the Blob to it
+//           const imageFileHandle = await newFolderHandle.getFileHandle(slice.images[i].name, { create: true });
+//           const imageWritable = await imageFileHandle.createWritable();
+//           await imageWritable.write(imageBlob);
+//           await imageWritable.close();
+//         }
 
-      }
-      else {
-        alert("A slice with same name already exists in your repo")
-      }
+//       }
+//       else {
+//         alert("A slice with same name already exists in your repo")
+//       }
 
-      console.log("Files written successfully");
-    } catch (err) {
-      console.error("Error selecting directory:", err);
-    }
-  };
+//       console.log("Files written successfully");
+//     } catch (err) {
+//       console.error("Error selecting directory:", err);
+//     }
+//   };
 
-  // Function to convert base64 to Blob
-  function base64ToBlob(base64: string) {
-    const binaryString = window.atob(base64.split(',')[1]);
-    const bytes = new Uint8Array(binaryString.length);
+//   // Function to convert base64 to Blob
+//   function base64ToBlob(base64: string) {
+//     const binaryString = window.atob(base64.split(',')[1]);
+//     const bytes = new Uint8Array(binaryString.length);
 
-    for (let i = 0; i < binaryString.length; i++) {
-      bytes[i] = binaryString.charCodeAt(i);
-    }
+//     for (let i = 0; i < binaryString.length; i++) {
+//       bytes[i] = binaryString.charCodeAt(i);
+//     }
 
-    return new Blob([bytes], { type: 'image/png' });
-  }
+//     return new Blob([bytes], { type: 'image/png' });
+//   }
 
-  return (
-    <button className="font-bold p-2 rounded-md bg-gray-300 hover:bg-gray-500 hover:text-gray-200" onClick={handleButtonClick}>
-      Add to my project
-    </button>
-  )
-};
+//   return (
+//     <button className="font-bold p-2 rounded-md bg-gray-300 hover:bg-gray-500 hover:text-gray-200" onClick={handleButtonClick}>
+//       Add to my project
+//     </button>
+//   )
+// };
 
 const DesignSystemNavigator = ({ libraries }: {
   libraries: {
     id: string;
     name: string;
     sliceSections: AllDocumentTypes[];
-    sliceFiles: {
-      id: string;
-      model: string;
-      component: string;
-      images: {
-        name: string;
-        base64: string;
-      }[];
-    }[]
+    // sliceFiles: {
+    //   id: string;
+    //   model: string;
+    //   component: string;
+    //   images: {
+    //     name: string;
+    //     base64: string;
+    //   }[];
+    // }[]
   }[]
 }) => {
 
@@ -175,7 +175,7 @@ const DesignSystemNavigator = ({ libraries }: {
         websiteSections: sectionType.data.slices.map((section) => ({
           name: section.variation, ...section
         })),
-        files: library.sliceFiles.filter(slice => slice.id === sectionType.data.slices[0]?.slice_type!)[0]
+        //files: library.sliceFiles.filter(slice => slice.id === sectionType.data.slices[0]?.slice_type!)[0]
       })),
     }))
     ;
@@ -232,9 +232,9 @@ const DesignSystemNavigator = ({ libraries }: {
             </div>
           ))}
         </div>
-        <div className='grow flex justify-end'>
+        {/* <div className='grow flex justify-end'>
           <AddToProjectButton {...selectedCategory!.files} />
-        </div>
+        </div> */}
       </div>
       <div className="flex-1">
         {/* <div className="bg-gray-200 p-3 flex gap-4 fixed w-full z-50">
