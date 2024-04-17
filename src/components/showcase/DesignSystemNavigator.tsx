@@ -220,12 +220,12 @@ const DesignSystemNavigator = ({ libraries }: {
           </div>
         ))}
       </div>
-      <div className="bg-gray-F7 p-3 flex gap-4 fixed w-full z-40">
+      <div className="bg-gray-F7 p-3 flex gap-4 fixed w-full z-40 h-28">
         <div className='pl-[17.25rem] flex flex-wrap'>
           {selectedCategory?.websiteSections.map(section => (
             <div
               key={section.id}
-              className={`cursor-pointer p-2 ${section.id === selectedSectionId ? 'bg-gray-EE text-black' : 'hover:bg-gray-F7'}`}
+              className={`cursor-pointer p-2 h-10 ${section.id === selectedSectionId ? 'bg-gray-EE text-black' : 'hover:bg-gray-F7'}`}
               onClick={() => setSelectedSectionId(section.id)}
             >
               {section.variation}
