@@ -249,7 +249,7 @@ const DesignSystemNavigator = ({ libraries }: {
           ))}
           <AddToProjectButton {...selectedCategory!.files} />
         </div> */}
-        <div className="p-5 mt-20">
+        <div className="p-5 mt-28 border-4 border-gray-A4">
           {selectedSection ?
             <>
               <SliceZone slices={[selectedSection]} components={{ ...components }} />
