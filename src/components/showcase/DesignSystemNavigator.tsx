@@ -189,7 +189,7 @@ const DesignSystemNavigator = ({ libraries }: {
 
   return (
     <div className="flex h-screen">
-      <div className="w-64 bg-gray-EE p-5">
+      <div className="w-64 bg-gray-EE p-5 shrink-0">
       </div>
       <div className="w-64 bg-gray-EE p-5 fixed h-screen z-50">
         <div className="font-bold">Brands</div>
